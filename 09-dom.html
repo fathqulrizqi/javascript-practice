@@ -7,16 +7,24 @@
 </head>
 <body>
     <button>hello</button>
+    <button class="js-button">Second Button</button>
 
     <script>
-        console.log(document.title);
-        document.title = 'Changed';
+        // console.log(document.title);
+        // document.title = 'Changed';
 
-        console.log(document.body);
-        console.log(typeof document.body);
+        // console.log(document.body);
+        // console.log(typeof document.body);
 
-        console.log(document.body.innerHTML);
-        document.body.innerHTML = 'Changed';
+        // console.log(document.body.innerHTML);
+        // document.body.innerHTML = '<button>Good Job</button>';
+
+        // method
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('button').innerHTML = 'Changed';
+
+        const buttonElement =  document.querySelector('.js-button');
+        console.log(buttonElement);
 
         // document.body.innerHTML = 'hello';
         // document.title = 'Good Job';
